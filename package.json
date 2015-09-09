@@ -1,0 +1,53 @@
+{
+  "name": "kerplunk-twitter",
+  "displayName": "Twitter",
+  "description": "",
+  "version": "0.0.1",
+  "kerplunk": {
+    "permissions": {
+      "kerplunk-activityitem": {
+        "models": [
+          "ActivityItem"
+        ]
+      },
+      "kerplunk-identity": {
+        "models": [
+          "Identity"
+        ]
+      }
+    },
+    "recommended": [
+      "kerplunk-twitter-characteristic",
+      "kerplunk-foursquare-tweets",
+      "kerplunk-instagram-tweets",
+      "kerplunk-url-unshortener",
+      "kerplunk-rating"
+    ]
+  },
+  "keywords": [
+    "kerplunk-plugin",
+    "kp:Social Networking",
+    "kp:Twitter"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "main": "./lib/index.js",
+  "dependencies": {
+    "async": "^0.9.0",
+    "lodash": "^3.10.0",
+    "ntwitter": "0.5.0",
+    "react": "^0.13.3",
+    "when": "^3.7.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "glut": "0.0.1",
+    "glut-coffee-amdify": "0.0.0",
+    "gulp": "^3.8.8",
+    "gulp-coffee": "^2.3.1"
+  },
+  "scripts": {
+    "prepublish": "rm -rf ./lib ./public && gulp"
+  }
+}
