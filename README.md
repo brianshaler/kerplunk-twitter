@@ -1,6 +1,6 @@
 # kerplunk-twitter
 
-[Kerplunk](https://github.com/brianshaler/kerplunk) plugin. 
+[Kerplunk](https://github.com/brianshaler/kerplunk) plugin. Authenticate to the Twitter API
 
 [![Build Status](https://travis-ci.org/brianshaler/kerplunk-twitter.svg)](https://travis-ci.org/brianshaler/kerplunk-twitter)
 [![npm version](https://img.shields.io/npm/v/kerplunk-twitter.svg)](https://www.npmjs.com/package/kerplunk-twitter)
