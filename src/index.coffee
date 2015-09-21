@@ -96,18 +96,16 @@ module.exports = (System) ->
         return next err if err
         res.send me
 
-  crons: [
-    {
+  jobs:
+    timeline:
       frequency: 120
       task: (finished) ->
-        API.isSetup (err, isSetup) ->
-          throw err if err
-          if isSetup
+        Promise.promise (resolve, reject) ->
+          API.isSetup (err, isSetup) ->
+            return reject err if err
+            resolve isSetup
+        .then (isSetup) ->
+          if isSetup == true
             API.timeline (err) ->
               console.log "Twitter API.timeline" if err
               console.error err if err
-              finished()
-          else
-            finished()
-    }
-  ]
