@@ -2,7 +2,7 @@
   "name": "kerplunk-twitter",
   "displayName": "Twitter",
   "description": "Authenticate to the Twitter API",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "kerplunk": {
     "permissions": {
       "kerplunk-activityitem": {
